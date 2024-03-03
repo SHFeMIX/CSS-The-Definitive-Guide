@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <div class="outer"></div>
+        <div style="display: flex">
+            <div class="inner"></div>
+            <div id="center"></div>
+            <div class="inner"></div>
+        </div>
+        <div class="outer"></div>
+    </div>
+</body>
+<style>
+    body {
+        background-color: #645E00;
+    }
+
+    div:empty {
+        background-color: #FFF579;
+        border-radius: 10px;
+    }
+
+    body > div {
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+    #center {
+        width: 120px;
+        height: 120px;
+        border-radius: 20px;
+        margin: 20px
+    }
+
+    .inner {
+        width: 20px;
+        height: 60px;
+        align-self: center;
+    }
+
+    .outer {
+        height: 20px;
+        width: 60px;
+        margin: 0 auto;
+    }
+</style>
+
+</html>

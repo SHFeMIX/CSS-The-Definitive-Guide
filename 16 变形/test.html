@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <div>abcd</div>
+        <div>1234</div>
+    </section>
+</body>
+<style>
+    section {
+        transform-style: preserve-3d;
+        width: 100px;
+        height: 100px;
+        transition: transform 3s;
+    }
+
+    div {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        backface-visibility: hidden;
+    }
+
+    div:last-child {
+        transform: rotateY(180deg);
+        background: yellow;
+    }
+
+    div:first-child {
+        background: red
+    }
+
+    section:hover {
+        transform: rotateY(180deg)
+    }
+</style>
+</html>

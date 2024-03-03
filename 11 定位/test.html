@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="flex-container">
+        <div></div>
+        <div id="center">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div></div>
+    </div>
+</body>
+
+<style>
+
+    #flex-container {
+        display: flex;
+        width: 140px;
+        height: 103px
+    }
+
+    div:empty {
+        background-color: goldenrod;
+    }
+
+    #flex-container > :nth-child(2n + 1) {
+        width: 40px;
+        height: 75%;
+    }
+
+    #flex-container > :last-child {
+        align-self:flex-end
+    }
+    
+    #center {
+        width: 200px
+    }
+
+    #center > * {
+        border-bottom: 1px solid white;
+        height: 25px
+    }
+
+    #center > :nth-child(2) {
+        border-left: 1px solid white;
+    }
+
+    #center > :nth-child(3) {
+        border-right: 1px solid white;
+    }
+
+</style>
+</html>
